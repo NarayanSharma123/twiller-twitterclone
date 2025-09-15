@@ -1,0 +1,67 @@
+.page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Responsive for More Page ===== */
+@media (max-width: 1024px) {
+  .page {
+    padding: 20px;
+    height: auto;
+  }
+
+  .pageTitle {
+    font-size: 28px;
+  }
+
+  .pageSubTitle {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  /* Custom Video Player Responsive */
+  .custom-video-player {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 688px) {
+  .page {
+    padding: 15px;
+  }
+
+  .pageTitle {
+    font-size: 24px;
+  }
+
+  .pageSubTitle {
+    font-size: 18px;
+  }
+
+  .custom-video-player video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .page {
+    padding: 10px;
+  }
+
+  .pageTitle {
+    font-size: 20px;
+  }
+
+  .pageSubTitle {
+    font-size: 16px;
+  }
+
+  .custom-video-player video {
+    width: 100%;
+    height: auto;
+  }
+}

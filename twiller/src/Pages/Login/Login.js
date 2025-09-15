@@ -1,92 +1,170 @@
-import React, { useState, useContext } from "react";
+import React, { useState } from "react";
 import twitterimg from "../../image/twitter.jpeg";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import "react-phone-input-2/lib/style.css";
 import GoogleButton from "react-google-button";
+import { useTranslation } from "react-i18next";
 import { useNavigate, Link } from "react-router-dom";
 import "./login.css";
 import { useUserAuth } from "../../context/UserAuthContext";
+
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setpassword] = useState("");
   const [error, seterror] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
+  const [passwordType, setPasswordType] = useState("password");
   const navigate = useNavigate();
   const { googleSignIn, logIn } = useUserAuth();
+  const { t } = useTranslation();
+
   const handlesubmit = async (e) => {
     e.preventDefault();
     seterror("");
     try {
-      await logIn(email, password);
-      navigate("/");
+      const result = await logIn(email, password);
+      const user = result.user;
+
+      const res = await fetch("http://localhost:5000/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email: user.email }),
+      });
+
+      const data = await res.json();
+      console.log("Backend /login response:", data);
+
+      if (data.message === "OTP sent to your email") {
+        navigate("/verify-otp", { state: { email: user.email } });
+      } else if (data.success) {
+        navigate("/");
+      } else {
+        alert(data.message);
+      }
     } catch (error) {
-      seterror(error);
-      window.alert(error);
-    }
-  };
-  const hanglegooglesignin = async (e) => {
-    e.preventDefault();
-    try {
-      await googleSignIn();
-      navigate("/");
-    } catch (error) {
+      seterror(error.message);
+      window.alert(error.message);
       console.log(error);
     }
   };
+
+  const hanglegooglesignin = async (e) => {
+    e.preventDefault();
+    try {
+      const result = await googleSignIn();
+      const { email, displayName, photoURL } = result.user;
+
+      const regRes = await fetch("http://localhost:5000/register", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email,
+          name: displayName,
+          image: photoURL,
+          joinedOn: new Date(),
+        }),
+      });
+
+      const regData = await regRes.json();
+      console.log("Register response:", regData);
+
+      const loginRes = await fetch("http://localhost:5000/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      const loginData = await loginRes.json();
+      console.log("Backend /login response:", loginData);
+
+      navigate("/");
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
+
+  const handleShowPassword = () => {
+    setShowPassword(!showPassword);
+    setPasswordType(showPassword ? "password" : "text");
+  };
+
   return (
-    <>
-      <div className="login-container">
-        <div className="image-container">
-          <img src={twitterimg} className=" image" alt="twitterimg" />
-        </div>
-        <div className="form-container">
-          <div className="form-box">
-            <TwitterIcon style={{ color: "skyblue" }} />
-            <h2 className="heading">Happening now</h2>
-            {error && <p>{error}</p>}
-            <form onSubmit={handlesubmit}>
+    <div className="login-container">
+      <div className="image-container">
+        <img src={twitterimg} className="image" alt="twitterimg" />
+      </div>
+      <div className="form-container">
+        <div className="form-box">
+          <TwitterIcon style={{ color: "skyblue" }} />
+          <h2 className="heading">{t("login.title")}</h2>
+          {error && <p style={{ color: "red" }}>{error}</p>}
+          <form onSubmit={handlesubmit}>
+            <input
+              type="email"
+              className="email"
+              placeholder={t("login.emailPlaceholder")}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <div>
               <input
-                type="email"
-                className="email"
-                placeholder="Email address"
-                onChange={(e) => setEmail(e.target.value)}
-              />
-              <input
-                type="password"
+                type={passwordType}
                 className="password"
-                placeholder="Password"
+                placeholder={t("login.passwordPlaceholder")}
                 onChange={(e) => setpassword(e.target.value)}
               />
-              <div className="btn-login">
-                <button type="submit" className="btn">
-                  Log In
-                </button>
-              </div>
-            </form>
-            <hr />
-            <div>
-              <GoogleButton
-                className="g-btn"
-                type="light"
-                onClick={hanglegooglesignin}
-              />
+              <p className="show-hide-toggler" onClick={handleShowPassword}>
+                {showPassword
+                  ? t("login.hidePassword")
+                  : t("login.showPassword")}
+              </p>
             </div>
-          </div>
-          <div>
-            Don't have an account
-            <Link
-              to="/signup"
-              style={{
-                textDecoration: "none",
-                color: "var(--twitter-color)",
-                fontWeight: "600",
-                marginLeft: "5px",
-              }}
-            >
-              Sign Up
-            </Link>
+            <div className="btn-login">
+              <button type="submit" className="btn">
+                {t("login.button")}
+              </button>
+              <div className="forgot-password">
+                <Link className="resetLink" to="/forgot-password">
+                  <p>{t("login.resetPassword")}</p>
+                </Link>
+              </div>
+            </div>
+          </form>
+
+          <hr />
+          <br />
+          <div className="google">
+            <GoogleButton
+              className="g-btn"
+              type="light"
+              onClick={hanglegooglesignin}
+            />
           </div>
         </div>
+        <br />
+
+        <div className="signupLink">
+          {t("login.dontHaveAccount")}
+          <Link
+            to="/signup"
+            style={{
+              textDecoration: "none",
+              color: "var(--twitter-color)",
+              fontWeight: "600",
+              marginLeft: "5px",
+            }}
+          >
+            {t("login.signupLink")}
+          </Link>
+        </div>
+        <br />
       </div>
-    </>
+    </div>
   );
 };
 

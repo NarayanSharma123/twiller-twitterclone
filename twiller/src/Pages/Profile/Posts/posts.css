@@ -1,0 +1,57 @@
+/* ===== Responsive Design ===== */
+
+/* Large tablets / small laptops */
+@media (max-width: 1024px) {
+  .post__headerText h3 {
+    font-size: 15px;
+  }
+
+  .post__headerDescription p {
+    font-size: 13px;
+  }
+
+  .post__footer {
+    width: 90%;
+  }
+}
+
+/* Tablets / mobile landscape */
+@media (max-width: 768px) {
+  .post {
+    flex-direction: column;
+    padding: 8px 12px;
+  }
+
+  .post__avatar {
+    margin-bottom: 5px;
+  }
+
+  .post__headerText h3 {
+    font-size: 14px;
+  }
+
+  .post__headerDescription p {
+    font-size: 12px;
+  }
+
+  .post__footer {
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 8px;
+  }
+}
+
+/* Mobile portrait */
+@media (max-width: 480px) {
+  .post__headerText h3 {
+    font-size: 13px;
+  }
+
+  .post__headerDescription p {
+    font-size: 11px;
+  }
+
+  .post__fotter__icon {
+    font-size: 18px !important;
+  }
+}

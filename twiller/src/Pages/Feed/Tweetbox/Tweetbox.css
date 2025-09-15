@@ -45,11 +45,78 @@
   height: 40px !important;
 }
 
-.imageIcon {
+.imageIcon,
+.videoIcon {
   color: var(--twitter-color);
   padding-left: 25px;
 }
 
-.imageInput {
+.imageInput,
+.videoInput {
   display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .tweetBox__input {
+    padding: 12px 10px;
+  }
+
+  .tweetBox__input > input {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+
+  .imageIcon_tweetButton {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .tweetBox__tweetButton {
+    width: 90px;
+    height: 36px !important;
+    font-size: 14px !important;
+  }
+
+  .imageIcon {
+    padding-left: 15px;
+    font-size: 20px;
+  }
+
+  .tweetBox__preview img {
+    width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tweetBox__input {
+    padding: 8px 6px;
+  }
+
+  .tweetBox__input > input {
+    font-size: 14px;
+    margin-left: 8px;
+  }
+
+  .imageIcon_tweetButton {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .tweetBox__tweetButton {
+    width: 80px;
+    height: 34px !important;
+    font-size: 13px !important;
+  }
+
+  .imageIcon {
+    padding-left: 10px;
+    font-size: 18px;
+  }
+
+  .tweetBox__preview img {
+    width: 120px;
+  }
 }

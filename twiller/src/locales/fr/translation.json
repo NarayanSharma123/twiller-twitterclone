@@ -1,0 +1,158 @@
+{
+  "bookmark": {
+    "title": "Signets"
+  },
+  "chatbot": {
+    "title": "Chatbot",
+    "welcome": "Salut ! 👋 Posez-moi n'importe quoi et je trouverai des tweets pour vous.",
+    "noTweets": "Aucun tweet trouvé.",
+    "error": "Erreur lors de la récupération des tweets. Réessayez plus tard.",
+    "placeholder": "Demandez sur le cricket, la physique, la technologie...",
+    "send": "Envoyer"
+  },
+  "customvideoplayer": {
+    "comments": "Section des commentaires",
+    "nextVideo": "Vidéo suivante"
+  },
+  "explore": {
+    "title": "Explorer",
+    "searchPlaceholder": "Rechercher"
+  },
+  "post": {
+    "verified": "Utilisateur vérifié",
+    "reply": "Répondre",
+    "retweet": "Retweeter",
+    "like": "Aimer",
+    "share": "Partager"
+  },
+  "tweetbox": {
+    "placeholder": "Quoi de neuf ?",
+    "uploadingImage": "Téléchargement de l'image...",
+    "tweetButton": "Tweeter"
+  },
+  "feed": {
+    "home": "Accueil"
+  },
+  "lists": {
+    "title": "Listes"
+  },
+  "ForgotPassword": {
+    "title": "Mot de passe oublié",
+    "description": "Entrez votre e-mail pour réinitialiser votre mot de passe",
+    "email_placeholder": "Entrez votre e-mail",
+    "reset_button": "Réinitialiser le mot de passe",
+    "return_login": "Retour à la connexion",
+    "success": "E-mail de réinitialisation du mot de passe envoyé avec succès !",
+    "error": "Échec de l'envoi de l'e-mail de réinitialisation."
+  },
+  "login": {
+    "title": "Connectez-vous à votre compte",
+    "emailPlaceholder": "Entrez votre e-mail",
+    "passwordPlaceholder": "Entrez votre mot de passe",
+    "showPassword": "Afficher le mot de passe",
+    "hidePassword": "Masquer le mot de passe",
+    "button": "Connexion",
+    "resetPassword": "Mot de passe oublié ?",
+    "dontHaveAccount": "Vous n'avez pas de compte ?",
+    "signupLink": "S'inscrire"
+  },
+  "otpVerify": {
+    "title": "Entrez le OTP envoyé à",
+    "placeholder": "Entrez le OTP à 6 chiffres",
+    "button": "Vérifier OTP",
+    "error": "Quelque chose a mal tourné"
+  },
+  "signup": {
+    "title": "S'inscrire",
+    "subtitle": "Créez votre compte",
+    "usernamePlaceholder": "Entrez un nom d'utilisateur",
+    "fullnamePlaceholder": "Entrez votre nom complet",
+    "emailPlaceholder": "Entrez votre e-mail",
+    "passwordPlaceholder": "Entrez un mot de passe",
+    "showPassword": "Afficher le mot de passe",
+    "hidePassword": "Masquer le mot de passe",
+    "button": "S'inscrire",
+    "alreadyHaveAccount": "Vous avez déjà un compte ?",
+    "loginLink": "Connexion"
+  },
+  "message": {
+    "title": "Messages"
+  },
+  "more": {
+    "title": "Plus",
+    "subtitle": "Lecteur vidéo personnalisé",
+    "nextVideo": "Vidéo suivante lancée !",
+    "commentsOpened": "Section des commentaires ouverte !"
+  },
+  "notification": {
+    "error": "Erreur lors de la réception de la notification"
+  },
+  "editprofile": {
+    "edit": "Modifier",
+    "editDateOfBirth": "Modifier la date de naissance",
+    "dobInfo": "Cela ne peut être changé que quelques fois. Assurez-vous d'entrer l'âge correct de l'utilisateur.",
+    "cancel": "Annuler",
+    "editProfileBtn": "Modifier le profil",
+    "headerTitle": "Modifier le profil",
+    "save": "Enregistrer",
+    "name": "Nom",
+    "bio": "Bio",
+    "location": "Lieu",
+    "website": "Site web",
+    "birthDate": "Date de naissance",
+    "addDob": "Ajouter votre date de naissance",
+    "switchToProfessional": "Passer en professionnel"
+  },
+  "mainprofile": {
+    "tweets": "Tweets",
+    "enableNotifications": "Activer les notifications",
+    "disableNotifications": "Désactiver les notifications"
+  },
+  "posts": {
+    "imageAlt": "publication",
+    "fullImageAlt": "complet"
+  },
+  "settings": {
+    "title": "Paramètres",
+    "language": "Langue",
+    "emailPlaceholder": "Entrez votre e-mail",
+    "sendOtp": "Envoyer OTP",
+    "otpPlaceholder": "Entrez OTP",
+    "verifyOtp": "Vérifier OTP",
+    "otpSentMessage": "OTP envoyé à votre e-mail.",
+    "otpSendError": "Problème lors de l'envoi de l'OTP.",
+    "otpVerificationFail": "Échec de la vérification OTP.",
+    "emailVerifiedFrench": "E-mail vérifié ! Vous pouvez maintenant choisir le français.",
+    "emailVerifyMessage": "Vérifiez votre e-mail pour choisir le français."
+  },
+  "customlink": {
+    "link": "Lien"
+  },
+  "sidebar": {
+    "home": "Accueil",
+    "explore": "Explorer",
+    "notifications": "Notifications",
+    "messages": "Messages",
+    "bookmarks": "Signets",
+    "lists": "Listes",
+    "profile": "Profil",
+    "more": "Plus",
+    "tweet": "Tweeter",
+    "menu": {
+      "settings": "Paramètres",
+      "addAccount": "Ajouter un compte",
+      "logout": "Se déconnecter"
+    }
+  },
+  "sidebaroption": {
+    "default_text": "Option"
+  },
+  "widgets": {
+    "search_placeholder": "Rechercher sur Twitter",
+    "whats_happening": "Que se passe-t-il"
+  },
+  "home": {
+    "logout_success": "Vous vous êtes déconnecté avec succès",
+    "error_message": "Une erreur est survenue"
+  }
+}

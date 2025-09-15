@@ -1,0 +1,158 @@
+{
+  "bookmark": {
+    "title": "ブックマーク"
+  },
+  "chatbot": {
+    "title": "チャットボット",
+    "welcome": "こんにちは！👋 何でも聞いてください。ツイートを取得します。",
+    "noTweets": "ツイートが見つかりませんでした。",
+    "error": "ツイートの取得中にエラーが発生しました。後で再試行してください。",
+    "placeholder": "クリケット、物理、テクノロジーについて質問してください...",
+    "send": "送信"
+  },
+  "customvideoplayer": {
+    "comments": "コメントセクション",
+    "nextVideo": "次の動画"
+  },
+  "explore": {
+    "title": "探索",
+    "searchPlaceholder": "検索"
+  },
+  "post": {
+    "verified": "認証済みユーザー",
+    "reply": "返信",
+    "retweet": "リツイート",
+    "like": "いいね",
+    "share": "共有"
+  },
+  "tweetbox": {
+    "placeholder": "何が起きていますか？",
+    "uploadingImage": "画像をアップロード中...",
+    "tweetButton": "ツイート"
+  },
+  "feed": {
+    "home": "ホーム"
+  },
+  "lists": {
+    "title": "リスト"
+  },
+  "ForgotPassword": {
+    "title": "パスワードを忘れた場合",
+    "description": "パスワードをリセットするためにメールを入力してください",
+    "email_placeholder": "メールを入力",
+    "reset_button": "パスワードをリセット",
+    "return_login": "ログインに戻る",
+    "success": "パスワードリセットメールを送信しました！",
+    "error": "リセットメールの送信に失敗しました。"
+  },
+  "login": {
+    "title": "アカウントにログイン",
+    "emailPlaceholder": "メールを入力",
+    "passwordPlaceholder": "パスワードを入力",
+    "showPassword": "パスワードを表示",
+    "hidePassword": "パスワードを非表示",
+    "button": "ログイン",
+    "resetPassword": "パスワードをお忘れですか？",
+    "dontHaveAccount": "アカウントをお持ちでないですか？",
+    "signupLink": "サインアップ"
+  },
+  "otpVerify": {
+    "title": "送信されたOTPを入力してください",
+    "placeholder": "6桁のOTPを入力",
+    "button": "OTPを確認",
+    "error": "エラーが発生しました"
+  },
+  "signup": {
+    "title": "サインアップ",
+    "subtitle": "アカウントを作成",
+    "usernamePlaceholder": "ユーザー名を入力",
+    "fullnamePlaceholder": "フルネームを入力",
+    "emailPlaceholder": "メールを入力",
+    "passwordPlaceholder": "パスワードを入力",
+    "showPassword": "パスワードを表示",
+    "hidePassword": "パスワードを非表示",
+    "button": "サインアップ",
+    "alreadyHaveAccount": "すでにアカウントをお持ちですか？",
+    "loginLink": "ログイン"
+  },
+  "message": {
+    "title": "メッセージ"
+  },
+  "more": {
+    "title": "もっと見る",
+    "subtitle": "カスタムビデオプレーヤー",
+    "nextVideo": "次の動画を再生！",
+    "commentsOpened": "コメントセクションを開きました！"
+  },
+  "notification": {
+    "error": "通知の受信中にエラーが発生しました"
+  },
+  "editprofile": {
+    "edit": "編集",
+    "editDateOfBirth": "生年月日を編集",
+    "dobInfo": "これは数回しか変更できません。アカウントを使用する人の年齢を正確に入力してください。",
+    "cancel": "キャンセル",
+    "editProfileBtn": "プロフィールを編集",
+    "headerTitle": "プロフィールを編集",
+    "save": "保存",
+    "name": "名前",
+    "bio": "自己紹介",
+    "location": "場所",
+    "website": "ウェブサイト",
+    "birthDate": "生年月日",
+    "addDob": "生年月日を追加",
+    "switchToProfessional": "プロフェッショナルに切り替え"
+  },
+  "mainprofile": {
+    "tweets": "ツイート",
+    "enableNotifications": "通知を有効化",
+    "disableNotifications": "通知を無効化"
+  },
+  "posts": {
+    "imageAlt": "投稿",
+    "fullImageAlt": "全体"
+  },
+  "settings": {
+    "title": "設定",
+    "language": "言語",
+    "emailPlaceholder": "メールを入力",
+    "sendOtp": "OTPを送信",
+    "otpPlaceholder": "OTPを入力",
+    "verifyOtp": "OTPを確認",
+    "otpSentMessage": "OTPがメールに送信されました。",
+    "otpSendError": "OTPの送信に失敗しました。",
+    "otpVerificationFail": "OTP確認に失敗しました。",
+    "emailVerifiedFrench": "メールが確認されました！フランス語を選択できます。",
+    "emailVerifyMessage": "フランス語を選択するにはメールを確認してください。"
+  },
+  "customlink": {
+    "link": "リンク"
+  },
+  "sidebar": {
+    "home": "ホーム",
+    "explore": "探索",
+    "notifications": "通知",
+    "messages": "メッセージ",
+    "bookmarks": "ブックマーク",
+    "lists": "リスト",
+    "profile": "プロフィール",
+    "more": "もっと見る",
+    "tweet": "ツイート",
+    "menu": {
+      "settings": "設定",
+      "addAccount": "アカウントを追加",
+      "logout": "ログアウト"
+    }
+  },
+  "sidebaroption": {
+    "default_text": "オプション"
+  },
+  "widgets": {
+    "search_placeholder": "Twitterを検索",
+    "whats_happening": "今何が起きているか"
+  },
+  "home": {
+    "logout_success": "正常にログアウトしました",
+    "error_message": "エラーが発生しました"
+  }
+}

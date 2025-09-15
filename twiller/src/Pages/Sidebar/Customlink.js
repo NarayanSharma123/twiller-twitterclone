@@ -1,20 +1,24 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import "./sidebar.css";
+
 const Customlink = ({ children, to, ...props }) => {
-  let resolved = useResolvedPath(to);
-  let match = useMatch({ path: resolved.pathname, end: true });
+  const resolved = useResolvedPath(to);
+  const match = useMatch({ path: resolved.pathname, end: true });
+  const { t } = useTranslation();
 
   return (
     <div>
       <Link
         style={{
           textDecoration: "none",
-          color: match ? "var(--twitter-color" : "black",
+          color: match ? "var(--twitter-color)" : "black",
         }}
         to={to}
         {...props}
       >
-        {children}
+        {children || t("customlink.link")}
       </Link>
     </div>
   );

@@ -146,3 +146,115 @@
 .last-section > .last-btn:hover {
   background-color: #b4b7b9;
 }
+
+/* ===== Responsive for Edit Profile Modal ===== */
+@media (max-width: 1024px) {
+  .modal {
+    width: 90% !important;
+    height: auto !important;
+    padding: 15px;
+  }
+
+  .header > .header-title {
+    font-size: 18px;
+  }
+
+  .header > .save-btn {
+    padding: 5px 15px;
+    font-size: 14px;
+  }
+
+  .fill-content > .text-field {
+    font-size: 14px;
+  }
+
+  .profileImage {
+    width: 100px;
+    height: 100px;
+    margin-top: -60px;
+  }
+
+  .last-section h2 {
+    font-size: 16px;
+  }
+
+  .last-section > .last-btn {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 688px) {
+  .modal {
+    width: 95% !important;
+    height: auto !important;
+    padding: 10px;
+  }
+
+  .fill-content {
+    margin: 10px;
+  }
+
+  .fill-content > .text-field {
+    font-size: 13px;
+  }
+
+  .birthdate-section {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px;
+  }
+
+  .birthdate-section text {
+    padding-bottom: 10px;
+  }
+
+  .text > .e-button {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+
+  .last-section h2 {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+
+  .last-section > .last-btn {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal {
+    width: 100% !important;
+    height: auto !important;
+    padding: 5px;
+  }
+
+  .fill-content > .text-field {
+    font-size: 12px;
+  }
+
+  .profileImage {
+    width: 80px;
+    height: 80px;
+    margin-top: -50px;
+  }
+
+  .header > .header-title {
+    font-size: 16px;
+  }
+
+  .header > .save-btn {
+    padding: 4px 10px;
+    font-size: 12px;
+  }
+
+  .last-section h2 {
+    font-size: 12px;
+  }
+
+  .last-section > .last-btn {
+    font-size: 12px;
+  }
+}

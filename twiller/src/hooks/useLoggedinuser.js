@@ -9,10 +9,9 @@ const useLoggedinuser = () => {
     fetch(`http://localhost:5000/loggedinuser?email=${email}`)
       .then((res) => res.json())
       .then((data) => {
-        // console.log(data)
         setloggedinuser(data);
       });
-  }, [email, loggedinuser]);
+  }, [email]);
   return [loggedinuser, setloggedinuser];
 };
 

@@ -11,6 +11,7 @@ import MoreIcon from "@mui/icons-material/More";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import Divider from "@mui/material/Divider";
 import DoneIcon from "@mui/icons-material/Done";
+import { useTranslation } from "react-i18next";
 import Button from "@mui/material/Button";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import { Avatar } from "@mui/material";
@@ -22,57 +23,70 @@ import Customlink from "./Customlink";
 import Sidebaroption from "./Sidebaroption";
 import { useNavigate } from "react-router-dom";
 import useLoggedinuser from "../../hooks/useLoggedinuser";
+import SettingsIcon from "@mui/icons-material/Settings";
+import LogoutIcon from "@mui/icons-material/Logout";
+import PersonAddAltIcon from "@mui/icons-material/PersonAddAlt";
+
 const Sidebar = ({ handlelogout, user }) => {
+  const { t } = useTranslation();
   const [anchorE1, setanchorE1] = useState(null);
   const openmenu = Boolean(anchorE1);
   const [loggedinuser] = useLoggedinuser();
   const navigate = useNavigate();
+
   const handleclick = (e) => {
     setanchorE1(e.currentTarget);
-    // console.log(e.currentTarget);
   };
+
   const handleclose = () => {
     setanchorE1(null);
   };
+
   const result = user?.email?.split("@")[0];
 
   return (
     <div className="sidebar">
       <TwitterIcon className="sidebar__twitterIcon" />
       <Customlink to="/home/feed">
-        <Sidebaroption active Icon={HomeIcon} text="Home" />
+        <Sidebaroption active Icon={HomeIcon} text={`${t("sidebar.home")} `} />
       </Customlink>
       <Customlink to="/home/explore">
-        <Sidebaroption Icon={SearchIcon} text="Explore" />
+        <Sidebaroption Icon={SearchIcon} text={t("sidebar.explore")} />
       </Customlink>
       <Customlink to="/home/notification">
-        <Sidebaroption Icon={NotificationsNoneIcon} text="Notifications" />
+        <Sidebaroption
+          Icon={NotificationsNoneIcon}
+          text={t("sidebar.notifications")}
+        />
       </Customlink>
       <Customlink to="/home/messages">
-        <Sidebaroption Icon={MailOutlineIcon} text="Messages" />
+        <Sidebaroption Icon={MailOutlineIcon} text={t("sidebar.messages")} />
       </Customlink>
       <Customlink to="/home/bookmarks">
-        <Sidebaroption Icon={BookmarkBorderIcon} text="Bookmarks" />
+        <Sidebaroption
+          Icon={BookmarkBorderIcon}
+          text={t("sidebar.bookmarks")}
+        />
       </Customlink>
       <Customlink to="/home/lists">
-        <Sidebaroption Icon={ListAltIcon} text="Lists" />
+        <Sidebaroption Icon={ListAltIcon} text={t("sidebar.lists")} />
       </Customlink>
-      <Customlink to="/home/profile">
-        <Sidebaroption Icon={PermIdentityIcon} text="Profile" />
+      <Customlink to={`/home/profile/${loggedinuser[0]?._id || user?.uid}`}>
+        <Sidebaroption Icon={PermIdentityIcon} text={t("sidebar.profile")} />
       </Customlink>
       <Customlink to="/home/more">
-        <Sidebaroption Icon={MoreIcon} text="More" />
+        <Sidebaroption Icon={MoreIcon} text={t("sidebar.more")} />
       </Customlink>
       <Button variant="outlined" className="sidebar__tweet" fullWidth>
-        Tweet
+        {t("sidebar.tweet")}
       </Button>
+
       <div className="Profile__info">
         <Avatar
           src={
             loggedinuser[0]?.profileImage
               ? loggedinuser[0].profileImage
               : user && user.photoURL
-            // : "https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
           }
         />
         <div className="user__info">
@@ -102,14 +116,15 @@ const Sidebar = ({ handlelogout, user }) => {
         >
           <MenuItem
             className="Profile__info1"
-            onClick={() => navigate("/home/profile")}
+            onClick={() =>
+              navigate(`/home/profile/${loggedinuser[0]?._id || user?.uid}`)
+            }
           >
             <Avatar
               src={
                 loggedinuser[0]?.profileImage
                   ? loggedinuser[0]?.profileImage
                   : user && user.photoURL
-                // : "https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
               }
             />
             <div className="user__info subUser__info">
@@ -127,8 +142,22 @@ const Sidebar = ({ handlelogout, user }) => {
             </div>
           </MenuItem>
           <Divider />
-          <MenuItem onClick={handleclose}>Add an existing account</MenuItem>
-          <MenuItem onClick={handlelogout}>Log out @{result}</MenuItem>
+
+          <Customlink to="/home/settings">
+            <MenuItem>
+              <SettingsIcon style={{ color: "gray", fontWeight: "bold" }} />
+              &nbsp; {t("sidebar.menu.settings")}
+            </MenuItem>
+          </Customlink>
+
+          <MenuItem onClick={handleclose}>
+            <PersonAddAltIcon style={{ color: "blue", fontWeight: "bold" }} />
+            &nbsp; {t("sidebar.menu.addAccount")}
+          </MenuItem>
+          <MenuItem onClick={handlelogout}>
+            <LogoutIcon style={{ color: "red", fontWeight: "bold" }} />
+            &nbsp; {t("sidebar.menu.logout")} @{result}
+          </MenuItem>
         </Menu>
       </div>
     </div>

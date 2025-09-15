@@ -165,3 +165,152 @@
   color: var(--twitter-color);
   cursor: pointer;
 }
+
+.notificationToggle {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+.notificationToggle input {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+/* ===== Responsive for Mainprofile ===== */
+
+/* Large tablets / small laptops */
+@media (max-width: 1024px) {
+  .coverImage {
+    width: 100%;
+    height: 180px;
+  }
+
+  .avatarContainer {
+    width: 120px;
+    height: 120px;
+    margin-top: -60px;
+  }
+
+  .avatar {
+    height: 100%;
+  }
+
+  .heading-4 {
+    font-size: 18px;
+    margin-left: 30px;
+  }
+
+  .heading-3 {
+    font-size: 22px;
+  }
+
+  .usernameSection {
+    font-size: 14px;
+  }
+
+  .locationAndLink {
+    gap: 15px;
+  }
+
+  .tweetsText {
+    margin-left: 15px;
+    font-size: 16px;
+  }
+}
+
+/* Tablets / mobile landscape */
+@media (max-width: 768px) {
+  .coverImage {
+    width: 100%;
+    height: 150px;
+  }
+
+  .avatarContainer {
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: 15px;
+  }
+
+  .heading-4 {
+    font-size: 16px;
+    margin-left: 20px;
+  }
+
+  .heading-3 {
+    font-size: 20px;
+    margin-left: 15px;
+  }
+
+  .usernameSection {
+    font-size: 13px;
+    margin-left: 15px;
+  }
+
+  .infoContainer {
+    margin-left: 15px;
+  }
+
+  .locationAndLink {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .tweetsText {
+    margin-left: 15px;
+    font-size: 15px;
+  }
+}
+
+/* Mobile portrait */
+@media (max-width: 480px) {
+  .coverImage {
+    height: 120px;
+  }
+
+  .avatarContainer {
+    width: 80px;
+    height: 80px;
+    margin-top: -40px;
+    margin-left: 10px;
+  }
+
+  .heading-4 {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+
+  .heading-3 {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+
+  .usernameSection {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+
+  .infoContainer {
+    margin-left: 10px;
+  }
+
+  .locationAndLink {
+    gap: 8px;
+  }
+
+  .tweetsText {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+
+  .Edit-profile-btn {
+    padding: 6px 12px;
+    font-size: 12px;
+    margin-right: 10px;
+  }
+
+  .photoIcon {
+    font-size: 28px !important;
+  }
+}

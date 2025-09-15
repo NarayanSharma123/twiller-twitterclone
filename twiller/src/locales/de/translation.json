@@ -1,0 +1,158 @@
+{
+  "bookmark": {
+    "title": "Lesezeichen"
+  },
+  "chatbot": {
+    "title": "Chatbot",
+    "welcome": "Hi! 👋 Frag mich etwas und ich hole Tweets für dich.",
+    "noTweets": "Keine Tweets gefunden.",
+    "error": "Fehler beim Abrufen der Tweets. Bitte später erneut versuchen.",
+    "placeholder": "Frag über Cricket, Physik, Technik...",
+    "send": "Senden"
+  },
+  "customvideoplayer": {
+    "comments": "Kommentarbereich",
+    "nextVideo": "Nächstes Video"
+  },
+  "explore": {
+    "title": "Entdecken",
+    "searchPlaceholder": "Suche"
+  },
+  "post": {
+    "verified": "Verifizierter Nutzer",
+    "reply": "Antworten",
+    "retweet": "Retweet",
+    "like": "Gefällt mir",
+    "share": "Teilen"
+  },
+  "tweetbox": {
+    "placeholder": "Was passiert gerade?",
+    "uploadingImage": "Bild wird hochgeladen...",
+    "tweetButton": "Twittern"
+  },
+  "feed": {
+    "home": "Startseite"
+  },
+  "lists": {
+    "title": "Listen"
+  },
+  "ForgotPassword": {
+    "title": "Passwort vergessen",
+    "description": "Gib deine E-Mail ein, um dein Passwort zurückzusetzen",
+    "email_placeholder": "Gib deine E-Mail ein",
+    "reset_button": "Passwort zurücksetzen",
+    "return_login": "Zurück zum Login",
+    "success": "Passwort-Zurücksetzungs-E-Mail erfolgreich gesendet!",
+    "error": "Fehler beim Senden der Zurücksetzungs-E-Mail."
+  },
+  "login": {
+    "title": "Melde dich bei deinem Konto an",
+    "emailPlaceholder": "Gib deine E-Mail ein",
+    "passwordPlaceholder": "Gib dein Passwort ein",
+    "showPassword": "Passwort anzeigen",
+    "hidePassword": "Passwort verbergen",
+    "button": "Anmelden",
+    "resetPassword": "Passwort vergessen?",
+    "dontHaveAccount": "Noch keinen Account?",
+    "signupLink": "Registrieren"
+  },
+  "otpVerify": {
+    "title": "Gib den gesendeten OTP ein",
+    "placeholder": "6-stelliger OTP eingeben",
+    "button": "OTP überprüfen",
+    "error": "Etwas ist schiefgelaufen"
+  },
+  "signup": {
+    "title": "Registrieren",
+    "subtitle": "Erstelle deinen Account",
+    "usernamePlaceholder": "Benutzernamen eingeben",
+    "fullnamePlaceholder": "Vollständigen Namen eingeben",
+    "emailPlaceholder": "E-Mail eingeben",
+    "passwordPlaceholder": "Passwort eingeben",
+    "showPassword": "Passwort anzeigen",
+    "hidePassword": "Passwort verbergen",
+    "button": "Registrieren",
+    "alreadyHaveAccount": "Schon einen Account?",
+    "loginLink": "Anmelden"
+  },
+  "message": {
+    "title": "Nachrichten"
+  },
+  "more": {
+    "title": "Mehr",
+    "subtitle": "Benutzerdefinierter Video-Player",
+    "nextVideo": "Nächstes Video ausgelöst!",
+    "commentsOpened": "Kommentarbereich geöffnet!"
+  },
+  "notification": {
+    "error": "Fehler beim Empfangen der Benachrichtigung"
+  },
+  "editprofile": {
+    "edit": "Bearbeiten",
+    "editDateOfBirth": "Geburtsdatum bearbeiten",
+    "dobInfo": "Dies kann nur wenige Male geändert werden. Stelle sicher, dass du das Alter der Person korrekt eingibst.",
+    "cancel": "Abbrechen",
+    "editProfileBtn": "Profil bearbeiten",
+    "headerTitle": "Profil bearbeiten",
+    "save": "Speichern",
+    "name": "Name",
+    "bio": "Bio",
+    "location": "Ort",
+    "website": "Webseite",
+    "birthDate": "Geburtsdatum",
+    "addDob": "Geburtsdatum hinzufügen",
+    "switchToProfessional": "Zu Professionell wechseln"
+  },
+  "mainprofile": {
+    "tweets": "Tweets",
+    "enableNotifications": "Benachrichtigungen aktivieren",
+    "disableNotifications": "Benachrichtigungen deaktivieren"
+  },
+  "posts": {
+    "imageAlt": "Beitrag",
+    "fullImageAlt": "Vollbild"
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "language": "Sprache",
+    "emailPlaceholder": "Gib deine E-Mail ein",
+    "sendOtp": "OTP senden",
+    "otpPlaceholder": "OTP eingeben",
+    "verifyOtp": "OTP überprüfen",
+    "otpSentMessage": "OTP wurde an deine E-Mail gesendet.",
+    "otpSendError": "Fehler beim Senden des OTP.",
+    "otpVerificationFail": "OTP-Überprüfung fehlgeschlagen.",
+    "emailVerifiedFrench": "E-Mail verifiziert! Du kannst jetzt Französisch wählen.",
+    "emailVerifyMessage": "Bitte E-Mail verifizieren, um Französisch zu wählen."
+  },
+  "customlink": {
+    "link": "Link"
+  },
+  "sidebar": {
+    "home": "Startseite",
+    "explore": "Entdecken",
+    "notifications": "Benachrichtigungen",
+    "messages": "Nachrichten",
+    "bookmarks": "Lesezeichen",
+    "lists": "Listen",
+    "profile": "Profil",
+    "more": "Mehr",
+    "tweet": "Twittern",
+    "menu": {
+      "settings": "Einstellungen",
+      "addAccount": "Account hinzufügen",
+      "logout": "Abmelden"
+    }
+  },
+  "sidebaroption": {
+    "default_text": "Option"
+  },
+  "widgets": {
+    "search_placeholder": "Twitter durchsuchen",
+    "whats_happening": "Was passiert gerade"
+  },
+  "home": {
+    "logout_success": "Du wurdest erfolgreich abgemeldet",
+    "error_message": "Ein Fehler ist aufgetreten"
+  }
+}

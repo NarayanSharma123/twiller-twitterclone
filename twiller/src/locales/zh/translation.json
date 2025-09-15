@@ -1,0 +1,158 @@
+{
+  "bookmark": {
+    "title": "书签"
+  },
+  "chatbot": {
+    "title": "聊天机器人",
+    "welcome": "嗨！👋 问我任何问题，我会为你抓取推文。",
+    "noTweets": "未找到推文。",
+    "error": "抓取推文出错，请稍后重试。",
+    "placeholder": "问我关于板球、物理、科技的问题...",
+    "send": "发送"
+  },
+  "customvideoplayer": {
+    "comments": "评论区",
+    "nextVideo": "下一个视频"
+  },
+  "explore": {
+    "title": "探索",
+    "searchPlaceholder": "搜索"
+  },
+  "post": {
+    "verified": "已认证用户",
+    "reply": "回复",
+    "retweet": "转发",
+    "like": "点赞",
+    "share": "分享"
+  },
+  "tweetbox": {
+    "placeholder": "发生了什么？",
+    "uploadingImage": "上传图片中...",
+    "tweetButton": "发推文"
+  },
+  "feed": {
+    "home": "首页"
+  },
+  "lists": {
+    "title": "列表"
+  },
+  "ForgotPassword": {
+    "title": "忘记密码",
+    "description": "输入你的邮箱以重置密码",
+    "email_placeholder": "输入你的邮箱",
+    "reset_button": "重置密码",
+    "return_login": "返回登录",
+    "success": "重置密码邮件发送成功！",
+    "error": "发送重置邮件失败。"
+  },
+  "login": {
+    "title": "登录你的账户",
+    "emailPlaceholder": "输入你的邮箱",
+    "passwordPlaceholder": "输入你的密码",
+    "showPassword": "显示密码",
+    "hidePassword": "隐藏密码",
+    "button": "登录",
+    "resetPassword": "忘记密码？",
+    "dontHaveAccount": "没有账户？",
+    "signupLink": "注册"
+  },
+  "otpVerify": {
+    "title": "输入发送到的 OTP",
+    "placeholder": "输入 6 位 OTP",
+    "button": "验证 OTP",
+    "error": "出现错误"
+  },
+  "signup": {
+    "title": "注册",
+    "subtitle": "创建你的账户",
+    "usernamePlaceholder": "输入用户名",
+    "fullnamePlaceholder": "输入全名",
+    "emailPlaceholder": "输入邮箱",
+    "passwordPlaceholder": "输入密码",
+    "showPassword": "显示密码",
+    "hidePassword": "隐藏密码",
+    "button": "注册",
+    "alreadyHaveAccount": "已有账户？",
+    "loginLink": "登录"
+  },
+  "message": {
+    "title": "消息"
+  },
+  "more": {
+    "title": "更多",
+    "subtitle": "自定义视频播放器",
+    "nextVideo": "触发下一个视频！",
+    "commentsOpened": "评论区已打开！"
+  },
+  "notification": {
+    "error": "接收通知出错"
+  },
+  "editprofile": {
+    "edit": "编辑",
+    "editDateOfBirth": "编辑出生日期",
+    "dobInfo": "此信息只能修改几次，请确保输入账户使用者的正确年龄。",
+    "cancel": "取消",
+    "editProfileBtn": "编辑个人资料",
+    "headerTitle": "编辑个人资料",
+    "save": "保存",
+    "name": "姓名",
+    "bio": "简介",
+    "location": "位置",
+    "website": "网站",
+    "birthDate": "出生日期",
+    "addDob": "添加出生日期",
+    "switchToProfessional": "切换到专业账户"
+  },
+  "mainprofile": {
+    "tweets": "推文",
+    "enableNotifications": "启用通知",
+    "disableNotifications": "禁用通知"
+  },
+  "posts": {
+    "imageAlt": "帖子",
+    "fullImageAlt": "完整"
+  },
+  "settings": {
+    "title": "设置",
+    "language": "语言",
+    "emailPlaceholder": "输入你的邮箱",
+    "sendOtp": "发送 OTP",
+    "otpPlaceholder": "输入 OTP",
+    "verifyOtp": "验证 OTP",
+    "otpSentMessage": "OTP 已发送到你的邮箱。",
+    "otpSendError": "发送 OTP 出现问题。",
+    "otpVerificationFail": "OTP 验证失败。",
+    "emailVerifiedFrench": "邮箱已验证！现在可以选择法语。",
+    "emailVerifyMessage": "请验证邮箱以选择法语。"
+  },
+  "customlink": {
+    "link": "链接"
+  },
+  "sidebar": {
+    "home": "首页",
+    "explore": "探索",
+    "notifications": "通知",
+    "messages": "消息",
+    "bookmarks": "书签",
+    "lists": "列表",
+    "profile": "个人资料",
+    "more": "更多",
+    "tweet": "发推文",
+    "menu": {
+      "settings": "设置",
+      "addAccount": "添加账户",
+      "logout": "登出"
+    }
+  },
+  "sidebaroption": {
+    "default_text": "选项"
+  },
+  "widgets": {
+    "search_placeholder": "搜索 Twitter",
+    "whats_happening": "发生了什么"
+  },
+  "home": {
+    "logout_success": "你已成功登出",
+    "error_message": "发生错误"
+  }
+}

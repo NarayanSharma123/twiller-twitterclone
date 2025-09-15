@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Link, useNavigate } from "react-router-dom";
 import twitterimg from "../../image/twitter.jpeg";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -10,23 +11,26 @@ const Signup = () => {
   const [username, setUsername] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
   const [error, setError] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
+  const [passwordType, setPasswordType] = useState("password");
   const [password, setPassword] = useState("");
   const { signUp, googleSignIn } = useUserAuth();
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError("");
     try {
-      // Firebase Auth Signup
       await signUp(email, password);
 
-      // Backend me user send karna
       const user = {
         username,
         name,
         email,
+        phone,
       };
 
       const response = await fetch("http://localhost:5000/register", {
@@ -54,10 +58,20 @@ const Signup = () => {
     e.preventDefault();
     try {
       await googleSignIn();
-      navigate("/");
+      navigate("/login");
     } catch (err) {
       console.log(err.message);
       setError(err.message);
+    }
+  };
+
+  const handleShowPassword = () => {
+    if (!showPassword) {
+      setShowPassword(true);
+      setPasswordType("text");
+    } else {
+      setShowPassword(false);
+      setPasswordType("password");
     }
   };
 
@@ -69,43 +83,51 @@ const Signup = () => {
       <div className="form-container">
         <div>
           <TwitterIcon style={{ color: "skyblue" }} />
-          <h2 className="heading">Happening now</h2>
-          <h3 className="heading1">Join Twiller today</h3>
+          <h2 className="heading">{t("signup.title")}</h2>
+          <h3 className="heading1">{t("signup.subtitle")}</h3>
 
-          {error && <p className="errorMessage">{error}</p>}
+          {error && <p className="errorMessage">{error.message}</p>}
 
           <form onSubmit={handleSubmit}>
             <input
               className="display-name"
               type="text"
-              placeholder="@username"
+              placeholder={t("signup.usernamePlaceholder")}
               onChange={(e) => setUsername(e.target.value)}
               required
             />
             <input
               className="display-name"
               type="text"
-              placeholder="Enter Full Name"
+              placeholder={t("signup.fullnamePlaceholder")}
               onChange={(e) => setName(e.target.value)}
               required
             />
             <input
               className="email"
               type="email"
-              placeholder="Email Address"
+              placeholder={t("signup.emailPlaceholder")}
               onChange={(e) => setEmail(e.target.value)}
               required
             />
-            <input
-              className="password"
-              type="password"
-              placeholder="Password"
-              onChange={(e) => setPassword(e.target.value)}
-              required
-            />
+
+            <div>
+              <input
+                className="password"
+                type={passwordType}
+                placeholder={t("signup.passwordPlaceholder")}
+                onChange={(e) => setPassword(e.target.value)}
+                required
+              />
+              <p className="show-hide-toggler" onClick={handleShowPassword}>
+                {showPassword
+                  ? t("signup.hidePassword")
+                  : t("signup.showPassword")}
+              </p>
+            </div>
             <div className="btn-login">
               <button type="submit" className="btn">
-                Sign Up
+                {t("signup.button")}
               </button>
             </div>
           </form>
@@ -121,7 +143,7 @@ const Signup = () => {
           </div>
 
           <div>
-            Already have an account?
+            {t("signup.alreadyHaveAccount")}
             <Link
               to="/login"
               style={{
@@ -131,7 +153,7 @@ const Signup = () => {
                 marginLeft: "5px",
               }}
             >
-              Log In
+              {t("signup.loginLink")}
             </Link>
           </div>
         </div>

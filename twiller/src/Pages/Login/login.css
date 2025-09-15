@@ -77,10 +77,6 @@ input {
   outline: none;
 }
 
-.btn-login {
-  padding: 7px;
-}
-
 .btn {
   background-color: rgb(92, 199, 241);
   width: 75%;
@@ -150,5 +146,187 @@ input {
     width: 100%;
     height: 100%;
     margin-left: 100px;
+  }
+}
+.show-hide-toggler {
+  color: #3b82f6;
+  cursor: pointer;
+  float: right;
+  margin-right: 97px;
+}
+
+.forgot-password,
+.google,
+.signupLink {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+.resetLink {
+  text-decoration: none;
+  color: #00aaff;
+}
+
+/* ===== Responsive for Login / Signup / OTP pages ===== */
+@media (max-width: 1024px) {
+  .login-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-container {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+  }
+
+  .form-container {
+    padding: 20px;
+    width: 90%;
+  }
+
+  .heading {
+    font-size: 36px;
+  }
+
+  .heading1 {
+    font-size: 24px;
+  }
+
+  .email,
+  .password,
+  .display-name {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .btn,
+  .g-btn {
+    width: 100%;
+    font-size: 16px !important;
+    padding: 12px;
+  }
+
+  .show-hide-toggler {
+    margin-right: 10px;
+    font-size: 14px;
+  }
+
+  .forgot-password,
+  .google,
+  .signupLink,
+  .resetLink {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 688px) {
+  .login-container {
+    padding: 10px;
+  }
+
+  .heading {
+    font-size: 28px;
+  }
+
+  .heading1 {
+    font-size: 20px;
+  }
+
+  .email,
+  .password,
+  .display-name {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .btn,
+  .g-btn {
+    font-size: 14px !important;
+    padding: 10px;
+  }
+
+  .show-hide-toggler {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    flex-direction: column;
+  }
+
+  .image-container {
+    order: 1;
+    width: 100%;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .form-container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .heading {
+    font-size: 24px;
+  }
+
+  .heading1 {
+    font-size: 18px;
+  }
+
+  .email,
+  .password,
+  .display-name {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .btn,
+  .g-btn {
+    font-size: 14px !important;
+    padding: 10px;
+  }
+
+  .show-hide-toggler {
+    margin-right: 5px;
+    font-size: 12px;
+  }
+
+  .forgot-password,
+  .google,
+  .signupLink,
+  .resetLink {
+    width: 100%;
+    justify-content: center;
+    font-size: 14px;
+  }
+}
+
+/* OTP Verify Page */
+@media (max-width: 480px) {
+  .otp-container {
+    padding: 20px;
+  }
+
+  .otp-container input {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .otp-container button {
+    font-size: 14px;
+    padding: 10px;
   }
 }

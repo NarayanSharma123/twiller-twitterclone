@@ -1,0 +1,159 @@
+{
+  "bookmark": {
+    "title": "Bookmarks"
+  },
+  "chatbot": {
+    "title": "Chatbot",
+    "welcome": "Hi! 👋 Ask me anything and I'll fetch tweets for you.",
+    "noTweets": "No tweets found.",
+    "error": "Error fetching tweets. Try again later.",
+    "placeholder": "Ask about cricket, physics, tech...",
+    "send": "Send"
+  },
+  "customvideoplayer": {
+    "comments": "Comments Section",
+    "nextVideo": "Next Video"
+  },
+  "explore": {
+    "title": "Explore",
+    "searchPlaceholder": "Search"
+  },
+  "post": {
+    "verified": "Verified User",
+    "reply": "Reply",
+    "retweet": "Retweet",
+    "like": "Like",
+    "share": "Share"
+  },
+  "tweetbox": {
+    "placeholder": "What's happening?",
+    "uploadingImage": "Uploading image...",
+    "tweetButton": "Tweet"
+  },
+  "feed": {
+    "home": "Home"
+  },
+  "lists": {
+    "title": "Lists"
+  },
+  "ForgotPassword": {
+    "title": "Forgot Password",
+    "description": "Enter your email to reset your password",
+    "email_placeholder": "Enter your email",
+    "reset_button": "Reset Password",
+    "return_login": "Back to Login",
+    "success": "Password reset email sent successfully!",
+    "error": "Failed to send reset email."
+  },
+  "login": {
+    "title": "Login to your account",
+    "emailPlaceholder": "Enter your email",
+    "passwordPlaceholder": "Enter your password",
+    "showPassword": "Show Password",
+    "hidePassword": "Hide Password",
+    "button": "Login",
+    "resetPassword": "Forgot Password?",
+    "dontHaveAccount": "Don't have an account?",
+    "signupLink": "Sign up"
+  },
+  "otpVerify": {
+    "title": "Enter OTP sent to",
+    "placeholder": "Enter 6-digit OTP",
+    "button": "Verify OTP",
+    "error": "Something went wrong"
+  },
+  "signup": {
+    "title": "Sign Up",
+    "subtitle": "Create your account",
+    "usernamePlaceholder": "Enter a username",
+    "fullnamePlaceholder": "Enter your full name",
+    "emailPlaceholder": "Enter your email",
+    "passwordPlaceholder": "Enter a password",
+    "showPassword": "Show Password",
+    "hidePassword": "Hide Password",
+    "button": "Sign Up",
+    "alreadyHaveAccount": "Already have an account?",
+    "loginLink": "Login"
+  },
+  "message": {
+    "title": "Messages"
+  },
+  "more": {
+    "title": "More",
+    "subtitle": "Custom Video Player",
+    "nextVideo": "Next Video Triggered!",
+    "commentsOpened": "Comments Section Opened!"
+  },
+  "notification": {
+    "error": "Error receiving notification"
+  },
+  "editprofile": {
+    "edit": "Edit",
+    "editDateOfBirth": "Edit date of birth",
+    "dobInfo": "This can only be changed a few times. Make sure you enter the age of the person using the account.",
+    "cancel": "Cancel",
+    "editProfileBtn": "Edit profile",
+    "headerTitle": "Edit Profile",
+    "save": "Save",
+    "name": "Name",
+    "bio": "Bio",
+    "location": "Location",
+    "website": "Website",
+    "birthDate": "Birth Date",
+    "addDob": "Add your date of birth",
+    "switchToProfessional": "Switch to Professional"
+  },
+  "mainprofile": {
+    "tweets": "Tweets",
+    "enableNotifications": "Enable Notifications",
+    "disableNotifications": "Disable Notifications"
+  },
+  "posts": {
+    "imageAlt": "post",
+    "fullImageAlt": "full"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "emailPlaceholder": "अपना email डालें",
+    "sendOtp": "Send OTP",
+    "otpPlaceholder": "OTP डालें",
+    "verifyOtp": "Verify OTP",
+    "otpSentMessage": "OTP आपके email पर भेजा गया है।",
+    "otpSendError": "OTP भेजने में समस्या आई।",
+    "otpVerificationFail": "OTP verification fail हुआ।",
+    "emailVerifiedFrench": "Email verified! अब आप French चुन सकते हैं।",
+    "emailVerifyMessage": "French चुनने के लिए Email verify करें।"
+  },
+  "customlink": {
+    "link": "Link"
+  },
+  "sidebar": {
+    "home": "Home",
+    "explore": "Explore",
+    "notifications": "Notifications",
+    "messages": "Messages",
+    "bookmarks": "Bookmarks",
+    "lists": "Lists",
+    "profile": "Profile",
+    "more": "More",
+    "tweet": "Tweet",
+    "menu": {
+      "settings": "Settings",
+      "addAccount": "Add account",
+      "logout": "Logout" 
+    }
+  },
+  "sidebaroption": {
+    "default_text": "Option"
+  },
+  "widgets": {
+    "search_placeholder": "Search Twitter",
+    "whats_happening": "What's happening"
+  },
+  "home": {
+    "logout_success": "You have logged out successfully",
+    "error_message": "An error occurred"
+  }
+}
+

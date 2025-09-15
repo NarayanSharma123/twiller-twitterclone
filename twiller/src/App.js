@@ -3,6 +3,7 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import Login from "./Pages/Login/Login";
+import ForgotPassword from "./Pages/Login/forgot-password";
 import Signup from "./Pages/Login/Signup";
 import Feed from "./Pages/Feed/Feed";
 import Explore from "./Pages/Explore/Explore";
@@ -14,10 +15,18 @@ import Profile from "./Pages/Profile/Profile";
 import More from "./Pages/more/More";
 import { UserAuthContextProvider } from "./context/UserAuthContext";
 import Bookmark from "./Pages/Bookmark/Bookmark";
+import Settings from "./Pages/Settings/Settings";
+import OtpVerify from "./Pages/Login/OtpVerify";
+
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import Chatbot from "./Pages/Chatbot/Chatbot";
+
 function App() {
   return (
     <div className="app">
       <UserAuthContextProvider>
+        <ToastContainer position="top-right" autoClose={2500} />
         <Routes>
           <Route
             path="/"
@@ -40,6 +49,8 @@ function App() {
             }
           />
           <Route path="/login" element={<Login />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/verify-otp" element={<OtpVerify />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/home" element={<Home />}>
             <Route path="feed" element={<Feed />} />
@@ -48,8 +59,10 @@ function App() {
             <Route path="messages" element={<Message />} />
             <Route path="lists" element={<Lists />} />
             <Route path="bookmarks" element={<Bookmark />} />
-            <Route path="profile" element={<Profile />} />
+            <Route path="profile/:userId" element={<Profile />} />
             <Route path="more" element={<More />} />
+            <Route path="settings" element={<Settings />} />
+            <Route path="chatbot" element={<Chatbot />} />
           </Route>
         </Routes>
       </UserAuthContextProvider>

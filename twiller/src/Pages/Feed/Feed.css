@@ -22,3 +22,52 @@
   font-size: 20px;
   font-weight: 800;
 }
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .feed {
+    flex: 1;
+    min-width: 100%;
+    border-right: none;
+    overflow-y: auto;
+  }
+
+  .feed__header {
+    padding: 12px 15px;
+  }
+
+  .feed__header > h2 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .feed {
+    flex: 1;
+    min-width: 100%;
+  }
+
+  .feed__header {
+    padding: 10px 12px;
+  }
+
+  .feed__header > h2 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .feed {
+    flex: 1;
+    min-width: 100%;
+    border-right: none;
+  }
+
+  .feed__header {
+    padding: 8px 10px;
+  }
+
+  .feed__header > h2 {
+    font-size: 14px;
+  }
+}
