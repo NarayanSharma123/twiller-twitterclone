@@ -66,7 +66,7 @@ const Mainprofile = ({ user }) => {
 
     axios
       .post(
-        "https://api.imgbb.com/1/upload?key=b0ea2f6cc0f276633b2a8a86d2c43335",
+        "https://api.imgbb.com/1/upload?key=91b6b9ff62a918b5babe2efab0a77fa1",
         formData
       )
       .then((res) => {
@@ -102,7 +102,7 @@ const Mainprofile = ({ user }) => {
 
     axios
       .post(
-        "https://api.imgbb.com/1/upload?key=b0ea2f6cc0f276633b2a8a86d2c43335",
+        "https://api.imgbb.com/1/upload?key=91b6b9ff62a918b5babe2efab0a77fa1",
         formData
       )
       .then((res) => {
